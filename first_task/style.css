@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(2, 0, 36);
+  margin: 0;
+}
+
+header {
+  background: rgb(2,0,36);
+  background: linear-gradient(305deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  font-size: 1.9rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-first-item {
+  text-decoration: none;
+  margin: 1rem;
+  text-align: center;
+  font-weight: 900;
+  color:rgba(0, 0, 0, 1);
+}
+
+.header-item {
+  text-decoration: none;
+  margin: 1rem;
+  font-family: Gill Sans, sans-serif;
+  background: linear-gradient(to right, crimson,pink,springgreen);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:rgba(0, 0, 0, 1);
+  text-align:center;
+  transition: color .2s ease-in-out;
+  text-transform:uppercase;
+  font-weight:900;
+}
+
+.header-item:hover {
+  color:rgba(0, 0, 0, 0);
+}
+
+@keyframes rainbow {
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
