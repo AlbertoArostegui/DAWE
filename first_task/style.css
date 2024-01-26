@@ -1,14 +1,35 @@
 body {
   background-color: rgb(2, 0, 36);
   margin: 0;
+  color: white;
 }
 
 header {
   background: rgb(2,0,36);
-  background: linear-gradient(305deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(305deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,190,240,.75) 100%);
   font-size: 1.9rem;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+aside {
+  text-decoration: none;
+  font-size: 1em;
+  min-height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+  border-right: 1px solid red;
+}
+
+.aside-class {
+  background-color: lightgreen;
+  transition: background-color .3s ease;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
 }
 
 .header-first-item {
@@ -21,8 +42,8 @@ header {
 
 .header-item {
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 1rem;
-  font-family: Gill Sans, sans-serif;
   background: linear-gradient(to right, crimson,pink,springgreen);
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
