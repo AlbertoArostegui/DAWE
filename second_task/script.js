@@ -37,4 +37,28 @@ window.onload = () => {
     añadir('header', 'https://www.google.com', 'Link header')
 
     añadir('footer nav', 'https://www.google.com', 'Link footer1')
+
+
+    // 1.3
+    let articulos = document.querySelectorAll('article');
+    for (let i = 0; i < articulos.length; i++) {
+        articulos[i].style.fontSize = 'smaller';
+    }
+
+    let links_aside = document.querySelectorAll('aside a');
+    for (let i = 0; i < links_aside.length; i++) {
+        links_aside[i].style.textDecoration = 'none';
+        links_aside[i].style.fontStyle = 'italic';
+    }
+
+    let links_nav = document.querySelectorAll('nav a');
+    for (let i = 0; i < links_nav.length; i++) {
+        links_nav[i].style.fontSize = 'smaller';
+        links_nav[i].style.fontWeight = 'bold';
+    }
+    
+
+    // 1.4
+    let elementos_li = document.querySelectorAll('li');
+    console.log('Hay ', elementos_li, ' elementos <li> en el documento');
 }
