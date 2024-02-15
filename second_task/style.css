@@ -1,0 +1,130 @@
+body {
+  background-color: rgb(2, 0, 36);
+  margin: 0;
+  color: white;
+}
+
+header {
+  background: rgb(2,0,36);
+  background: linear-gradient(305deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,190,240,.75) 100%);
+  font-size: 1.9rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+article {
+  border: 2px solid lightcoral;
+  padding: 1rem;
+  margin: 1.4rem;
+}
+
+aside {
+  text-decoration: none;
+  font-size: 1.5em;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  justify-content: space-between;
+  flex-direction: column;
+  border-right: 1px solid red;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#nav-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: lightgreen;
+  transition: background-color .3s ease;
+  text-decoration: none;
+}
+
+#third-arcticle {
+    border: 2px solid lightcoral;
+    padding: 1rem;
+    margin: 1.4rem;
+    background-image: url('2cs.png'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+    background-repeat: repeat; /* Esto hará que la imagen de fondo se repita */
+    background-size: contain;
+}
+
+.aside-class {
+  text-decoration: none;
+    font-size: 1.5em;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: 1px solid red;
+    position: relative;
+    background-color: rgba(0, 150, 150, 1);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+}
+
+.header-first-item {
+  text-decoration: none;
+  margin: 1rem;
+  text-align: center;
+  font-weight: 900;
+  color:rgba(0, 0, 0, 1);
+}
+
+.header-first-item:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-item {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem;
+  background: linear-gradient(to right, crimson,pink,springgreen);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:rgba(0, 0, 0, 1);
+  text-align:center;
+  transition: color .2s ease-in-out;
+  text-transform:uppercase;
+  font-weight:900;
+}
+
+.header-item:hover {
+  color:rgba(0, 0, 0, 0);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px; /* Ajusta el espaciado según sea necesario */
+}
+
+.logo-img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    transition: transform 0.3s ease; /* Transición de efecto hover */
+}
+
+.logo-img:hover {
+    transform: scale(1.2); /* Efecto de escala al hacer hover */
+}
+
+@keyframes rainbow {
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
