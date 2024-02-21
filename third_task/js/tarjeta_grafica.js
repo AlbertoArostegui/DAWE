@@ -1,4 +1,4 @@
-import { Producto } from "./producto";
+import { Producto } from "./producto.js";
 
 export class TarjetaGrafica extends Producto {
     constructor(nombre, precio, memoria, frecuencia, marca, arquitectura) {
@@ -34,7 +34,7 @@ export class TarjetaGrafica extends Producto {
         return this.arquitectura;
     }
     getTipo() {
-        return "Tarjeta Gráfica";
+        return "Tarjetas Gráficas";
     }
     toString() {
         return `${super.toString()}, Memoria: ${this.memoria}, Frecuencia: ${this.frecuencia}`;

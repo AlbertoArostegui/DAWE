@@ -1,4 +1,4 @@
-import { Producto } from "./producto";
+import { Producto } from "./producto.js";
 
 export class Disco extends Producto {
     constructor(nombre, precio, capacidad, tecnologia, marca, velocidad) {
@@ -27,7 +27,7 @@ export class Disco extends Producto {
         this.tecnologia = tecnologia;
     }
     getTipo() {
-        return "Disco";
+        return "Discos";
     }
     toString() {
         return `${super.toString()}, Capacidad: ${this.capacidad}, Tipo: ${this.tipo}`;

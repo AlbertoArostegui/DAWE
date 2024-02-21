@@ -1,4 +1,4 @@
-import { Producto } from "./producto";
+import { Producto } from "./producto.js";
 
 export class Procesador extends Producto {
     constructor(nombre, precio, nucleos, hilos, frecuencia, marca) {
@@ -33,7 +33,7 @@ export class Procesador extends Producto {
         this.frecuencia = frecuencia;
     }
     getTipo() {
-        return "Procesador";
+        return "Procesadores";
     }
     toString() {
         return `${super.toString()}, Nucleos: ${this.nucleos}, Hilos: ${this.hilos}, Frecuencia: ${this.frecuencia}`;

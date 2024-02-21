@@ -1,0 +1,48 @@
+/*No se como hacer que no crezcan las columnas, que se estiran sin parar*/
+body, html{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+}
+header {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2.5px 10px 0 rgba(0, 0, 0, 0.19);
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+#Procesadores, #Discos, #TarjetasGráficas {
+    width: 30%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+section {
+    background-color: #9ff3da;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.61);
+}
+
+section h2 {
+    color: #124797;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
