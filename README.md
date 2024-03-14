@@ -1,3 +1,3 @@
 # Diseño de aplicaciones web enriquecidas (Rich Internet Applications)
 
-This repository will be updated with the tasks I'm given in the course, there might be code in Spanish.
+Repositorio con el código de las prácticas de la asignatura DAWE. Aquí se encuentran las primeras prácticas, el resto han sido continuadas en otro repositorio. [DAWE](https://github.com/alvarovelascoprieto/dawe)
